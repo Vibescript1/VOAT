@@ -35,7 +35,7 @@ export default function StudentProfile() {
   const [studentDetails, setStudentDetails] = useState(initialStudentDetails);
   const [parentDetails, setParentDetails] = useState(initialParentDetails);
   const [resumeFile, setResumeFile] = useState("Resume");
-  const [resumePreview, setResumePreview] = useState("/public/resume.pdf");
+  const [resumePreview, setResumePreview] = useState("/resume.pdf");
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 

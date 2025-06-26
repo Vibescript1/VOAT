@@ -411,7 +411,7 @@ const AllApplicationsContent = () => {
 
           <div className="h-[300px] lg:h-[1150px] w-Full bg-white border border-gray-300 rounded overflow-hidden">
             <iframe
-              src="/public/resume.pdf"
+              src="/resume.pdf"
               // src={`https://docs.google.com/gview?url=${encodeURIComponent(selectedApplication.resume)}&embedded=true`}
               className="w-full h-full"
               frameBorder="0"
