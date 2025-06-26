@@ -46,9 +46,9 @@ function MainPages() {
       <footer
         id="footer"
         data-section="footer"
-        className="bg-black text-white w-full mt-auto"
+        className="bg-black z-40 text-white w-full mt-auto"
       >
-        <div className="footer-content px-4 md:px-8 py-6">
+        <div className="footer-content px-4 md:px-8 py-6 ">
           <Footer />
         </div>
       </footer>

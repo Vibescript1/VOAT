@@ -13,7 +13,7 @@ const StickySidebarButtons = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 3; // Adjusted to 1/3 for better detection
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
       
       let current = activeSection;
       for (const section of sections) {
@@ -25,7 +25,7 @@ const StickySidebarButtons = () => {
           
           if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
             current = section.id;
-            break; // Exit loop once we find the active section
+            break;
           }
         }
       }
@@ -35,10 +35,10 @@ const StickySidebarButtons = () => {
       }
     };
 
-    const scrollHandler = setTimeout(handleScroll, 100); // Debounce
+    const scrollHandler = setTimeout(handleScroll, 100);
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial check
-
+    handleScroll();
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
       clearTimeout(scrollHandler);
@@ -57,13 +57,13 @@ const StickySidebarButtons = () => {
   };
 
   return (
-    <aside className="fixed top-16 left-0 w-44 h-[calc(100vh-4rem)] bg-[#f5faff] border-r border-none z-40 flex flex-col justify-center items-center">
-      <div className="flex flex-col gap-4 p-4">
+    <aside className="fixed top-16 left-0 w-44 h-[calc(100vh-4rem)] bg-[#f6faff]  flex flex-col justify-center items-center">
+      <div className="flex flex-col gap-4 p-4 w-full">
         {sections.map((section) => (
           <button
             key={section.id}
             onClick={() => scrollToSection(section.id)}
-            className={`w-36 py-2 rounded-full text-sm font-medium shadow transition-all duration-200 ${
+            className={`w-full py-2 px-4 rounded-full text-sm font-medium shadow transition-all duration-200 ${
               activeSection === section.id
                 ? "bg-[#0B52C0] text-white"
                 : "bg-white text-[#0B52C0] border border-[#0B52C0] hover:bg-[#e0efff]"
