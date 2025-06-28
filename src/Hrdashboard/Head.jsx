@@ -37,14 +37,15 @@ const Header = ({ onMenuToggle }) => {
           >
             <Menu size={20} />
           </button>
-          <Link
-            to="/profile"
-            className="p-2 rounded-full hover:bg-[#1565C0] transition-colors"
+           <Link
+            to="/"
+            className="flex items-center bg-[#0D47A1] rounded-full px-4 py-2 hover:bg-[#1565C0] transition-colors cursor-pointer"
           >
             <Home size={20} />
+
           </Link>
         </div>
-        <h1 className="text-xl font-bold">VOAT</h1>
+               <h1 className="text-xl font-bold mx-auto w-1/3 text-center">VOAT</h1>
         <div className="flex items-center space-x-2">
           <div className="relative">
             <button
@@ -128,7 +129,7 @@ const Header = ({ onMenuToggle }) => {
       <div className="hidden md:flex bg-[#0F52BA] text-white py-4 px-6 justify-between items-center shadow-md">
         <div className="flex-1 flex items-center">
           <Link
-            to="/profile"
+            to="/"
             className="flex items-center space-x-2 bg-[#0D47A1] rounded-full px-4 py-2 hover:bg-[#1565C0] transition-colors cursor-pointer"
           >
             <Home size={20} />
@@ -137,7 +138,7 @@ const Header = ({ onMenuToggle }) => {
         </div>
 
         <div className="flex-1 flex justify-center">
-          <Link to="/profile">
+          <Link to="/">
             <h1 className="text-2xl font-bold">VOAT</h1>
           </Link>
         </div>

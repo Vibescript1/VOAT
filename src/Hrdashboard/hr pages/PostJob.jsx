@@ -281,7 +281,7 @@ const PostJob = () => {
       
       setTimeout(() => {
         if (isEditing) {
-          navigate('/all-jobs', { 
+          navigate('/hire/all-jobs', { 
             state: { 
               updatedJob: finalData,
               fromEdit: true 
@@ -289,7 +289,7 @@ const PostJob = () => {
             replace: true
           });
         } else {
-          navigate('/all-jobs', { replace: true });
+          navigate('/hire/all-jobs', { replace: true });
         }
       }, 2000);
     }, 1000);
@@ -325,7 +325,7 @@ const PostJob = () => {
           </p>
         </div>
         <Link
-          to={isEditing ? '/job-detail' : '/all-jobs'}
+          to={isEditing ? '/hire/all-jobs' : '/hire/hiring'}
           className="text-gray-500 hover:text-gray-700 flex items-center gap-1.5 transition-colors duration-200"
         >
           <X className="h-5 w-5" />

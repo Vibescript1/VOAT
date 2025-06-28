@@ -128,7 +128,7 @@ const JobDetailView = ({ job, onCloseHiring, onDelete, currentIndex, totalJobs, 
       setSampleJobs(updatedJobs);
 
       if (updatedJobs.length === 0) {
-        navigate('/hiring');
+        navigate('/hire/hiring');
       } else if (currentJobIndex >= updatedJobs.length) {
         setCurrentJobIndex(updatedJobs.length - 1);
       }
@@ -234,7 +234,7 @@ const JobDetailView = ({ job, onCloseHiring, onDelete, currentIndex, totalJobs, 
               </div>
               
               <Link 
-                to="/hiring" 
+                to="/hire/hiring" 
                 className="text-xs sm:text-sm text-indigo-600 hover:text-indigo-800 hover:underline ml-auto sm:ml-4 transition-colors font-medium flex items-center"
               >
                 <span>View All</span>

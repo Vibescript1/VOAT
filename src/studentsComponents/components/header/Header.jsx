@@ -83,11 +83,11 @@ const Header = () => {
             <Menu size={20} />
           </button>
           <Link
-            to="/profile"
+            to="/"
             className="flex items-center bg-[#0D47A1] rounded-full px-4 py-2 hover:bg-[#1565C0] transition-colors cursor-pointer"
           >
             <Home size={20} />
-            <span className="font-medium ml-2">HOME</span>
+
           </Link>
         </div>
 
@@ -186,9 +186,9 @@ const Header = () => {
       {/* Desktop Header */}
       <div className="absolute top-0 left-0 right-0 w-screen hidden md:flex bg-[#0F52BA] text-white py-4 px-6 justify-between items-center shadow-md z-40">
         {/* Left spacer */}
-        <div className="w-32">
+        <div className="flex-1 flex items-center">
           <Link
-            to="/profile"
+            to="/"
             className="flex items-center space-x-2 bg-[#0D47A1] rounded-full px-4 py-2 hover:bg-[#1565C0] transition-colors cursor-pointer"
           >
             <Home size={20} />
